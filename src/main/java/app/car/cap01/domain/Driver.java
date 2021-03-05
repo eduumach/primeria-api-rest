@@ -13,6 +13,7 @@ public class Driver {
 
     @Id
     @GeneratedValue
+    private
     Long id;
     String name;
     Date birthData;
