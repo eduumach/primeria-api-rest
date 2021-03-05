@@ -52,4 +52,9 @@ public class DriverAPI {
         return driverRepository.save(foundDriver);
     }
 
+    @DeleteMapping("/drivers/{id}")
+    public void deleteDriver(@PathVariable("id") Long id){
+        driverRepository.delete(findDriver(id));
+    }
+
 }
